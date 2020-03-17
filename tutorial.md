@@ -1,19 +1,9 @@
 # Pulsierende LED
 
-## Pulsieren lassen
-
-Ziehe den Code für eine Endlosschleife
-
-```blocks
-basic.forever(function () {
-   
-})
-```
-
 ## Ziehe den Code, um den Leucht-Zustand einer LED zu wechseln. 
 
 ```blocks
-basic.forever(function () {
+basic.forever( () => {
     led.toggle(0, 0)
 })
 ```
@@ -21,7 +11,7 @@ basic.forever(function () {
 ## Setze die Position der LED, die pulsieren soll, in dem Du für die X- und Y-Position jeweils den Wert 2 einträgst.
 
 ```blocks
-basic.forever(function () {
+basic.forever(() => {
     led.toggle(0, 0)
 })
 ```
@@ -31,7 +21,7 @@ gib als Wert für die Wartezeit die Zahl 100 ein und definiere so eine Wartezeit
 bevor die Schleife forgeführt wird. 
 
 ```blocks
-basic.forever(function () {
+basic.forever( () => {
     led.toggle(2, 2)
     basic.pause(100)
 })
